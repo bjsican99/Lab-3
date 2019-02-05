@@ -40,23 +40,13 @@ public class Laboratorio3 {
     }
     
     public static void SumaSueldo(int[][] intPlani, int[] intDepar){
-        for(int iPosicion = 0; iPosicion < 10; iPosicion++){
-            switch(intPlani[iPosicion][5]){
-                case 1:
-                    intDepar[0] += intPlani[iPosicion][4];
-                break; 
-                case 2:
-                    intDepar[1] += intPlani[iPosicion][4];
-                break;
-                case 3:
-                    intDepar[2] += intPlani[iPosicion][4];
-                break;
-                case 4:
-                    intDepar[3] += intPlani[iPosicion][4];
-                break;
-                case 5:
-                    intDepar[4] += intPlani[iPosicion][4];
-                break;
+        int iAuxConteo=1;
+        for(int iPosicion = 0; iPosicion < 5; iPosicion++){
+            for(int iFila=0; iFila < 10; iFila++){
+                if(iAuxConteo == intPlani[iFila][5]){
+                    intDepar[iPosicion] += intPlani[iFila][4]; 
+                }
+                iAuxConteo++;
             }
         }
     }
