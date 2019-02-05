@@ -44,8 +44,7 @@ public class Laboratorio3 {
         for(int iPosicion = 0; iPosicion < 5; iPosicion++){
             for(int iFila=0; iFila < 10; iFila++){
                 if(iAuxConteo == intPlani[iFila][5]){
-                    intDepar[iPosicion] += intPlani[iFila][4];
-                    System.out.println(intDepar[iPosicion]);
+                    intDepar[iPosicion] += intPlani[iFila][4];                   
                 }
             }
             iAuxConteo++;
